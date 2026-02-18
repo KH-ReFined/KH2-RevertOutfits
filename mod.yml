@@ -1,0 +1,497 @@
+title: Kingdom Hearts II - Re:Fined | Revert Outfits
+originalAuthor: The Re:Fined Team
+description: For the purists of the ages, this mod reverts all costume changes of Re:Fined!
+
+assets:
+- name: 03system.bin
+  method: binarc
+  source:
+  - name: memt
+    type: list
+    method: copy
+    source:
+    - name: system/MEMT
+      type: memt
+
+# === Cutscenes === #
+
+- name: ard/us/ca00.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca00.ard
+  - name: ard/fr/ca00.ard
+  - name: ard/gr/ca00.ard
+  - name: ard/it/ca00.ard
+  - name: ard/sp/ca00.ard
+  - name: ard/uk/ca00.ard
+  source:
+  - name: '101'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca00-101.event
+  - name: '202'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca00-202.event
+- name: ard/us/ca01.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca01.ard
+  - name: ard/fr/ca01.ard
+  - name: ard/gr/ca01.ard
+  - name: ard/it/ca01.ard
+  - name: ard/sp/ca01.ard
+  - name: ard/uk/ca01.ard
+  source:
+  - name: '102'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-102.event
+  - name: '103'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-103.event
+  - name: '104'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-104.event
+  - name: '203'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-203.event
+  - name: '204'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-204.event
+  - name: '215'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca01-215.event
+- name: ard/us/ca02.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca02.ard
+  - name: ard/fr/ca02.ard
+  - name: ard/gr/ca02.ard
+  - name: ard/it/ca02.ard
+  - name: ard/sp/ca02.ard
+  - name: ard/uk/ca02.ard
+  source:
+  - name: '105'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca02-105.event
+  - name: '106'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca02-106.event
+- name: ard/us/ca04.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca04.ard
+  - name: ard/fr/ca04.ard
+  - name: ard/gr/ca04.ard
+  - name: ard/it/ca04.ard
+  - name: ard/sp/ca04.ard
+  - name: ard/uk/ca04.ard
+  source:
+  - name: '121'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca04-121.event
+- name: ard/us/ca03.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca03.ard
+  - name: ard/fr/ca03.ard
+  - name: ard/gr/ca03.ard
+  - name: ard/it/ca03.ard
+  - name: ard/sp/ca03.ard
+  - name: ard/uk/ca03.ard
+  source:
+  - name: '111'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca03-111.event
+  - name: '119'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca03-119.event
+  - name: '122'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca03-122.event
+  - name: d00_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca03/D00_.yml
+  - name: d02_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca03/D02_.yml
+  - name: d03_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca03/D03_.yml
+- name: ard/us/ca05.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca05.ard
+  - name: ard/fr/ca05.ard
+  - name: ard/gr/ca05.ard
+  - name: ard/it/ca05.ard
+  - name: ard/sp/ca05.ard
+  - name: ard/uk/ca05.ard
+  source:
+  - name: '205'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-205.event
+  - name: '207'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-207.event
+  - name: '208'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-208.event
+  - name: '212'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-212.event
+  - name: '213'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-213.event
+  - name: '216'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca05-216.event
+  - name: d01_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca05/D01_.yml
+  - name: d51_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca05/D51_.yml
+  - name: d52_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca05/D52_.yml
+  - name: d54_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca05/D54_.yml
+  - name: d55_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca05/D55_.yml
+- name: ard/us/ca06.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca06.ard
+  - name: ard/fr/ca06.ard
+  - name: ard/gr/ca06.ard
+  - name: ard/it/ca06.ard
+  - name: ard/sp/ca06.ard
+  - name: ard/uk/ca06.ard
+  source:
+  - name: '206'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca06-206.event
+  - name: d53_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca06/D53_.yml
+- name: ard/us/ca07.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca07.ard
+  - name: ard/fr/ca07.ard
+  - name: ard/gr/ca07.ard
+  - name: ard/it/ca07.ard
+  - name: ard/sp/ca07.ard
+  - name: ard/uk/ca07.ard
+  source:
+  - name: '120'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca07-120.event
+- name: ard/us/ca08.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca08.ard
+  - name: ard/fr/ca08.ard
+  - name: ard/gr/ca08.ard
+  - name: ard/it/ca08.ard
+  - name: ard/sp/ca08.ard
+  - name: ard/uk/ca08.ard
+  source:
+  - name: '125'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca08-125.event
+  - name: '126'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca08-126.event
+- name: ard/us/ca09.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca09.ard
+  - name: ard/fr/ca09.ard
+  - name: ard/gr/ca09.ard
+  - name: ard/it/ca09.ard
+  - name: ard/sp/ca09.ard
+  - name: ard/uk/ca09.ard
+  source:
+  - name: '114'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca09-114.event
+  - name: '115'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca09-115.event
+- name: ard/us/ca10.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca10.ard
+  - name: ard/fr/ca10.ard
+  - name: ard/gr/ca10.ard
+  - name: ard/it/ca10.ard
+  - name: ard/sp/ca10.ard
+  - name: ard/uk/ca10.ard
+  source:
+  - name: '123'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca10-123.event
+  - name: '124'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca10-124.event
+- name: ard/us/ca11.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca11.ard
+  - name: ard/fr/ca11.ard
+  - name: ard/gr/ca11.ard
+  - name: ard/it/ca11.ard
+  - name: ard/sp/ca11.ard
+  - name: ard/uk/ca11.ard
+  source:
+  - name: '209'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca11-209.event
+  - name: d50_
+    type: areadataspawn
+    method: spawnpoint
+    source:
+    - name: mapscripts/ca11/D50_.yml
+- name: ard/us/ca14.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca14.ard
+  - name: ard/fr/ca14.ard
+  - name: ard/gr/ca14.ard
+  - name: ard/it/ca14.ard
+  - name: ard/sp/ca14.ard
+  - name: ard/uk/ca14.ard
+  source:
+  - name: '210'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca14-210.event
+  - name: '211'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca14-211.event
+- name: ard/us/ca17.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca17.ard
+  - name: ard/fr/ca17.ard
+  - name: ard/gr/ca17.ard
+  - name: ard/it/ca17.ard
+  - name: ard/sp/ca17.ard
+  - name: ard/uk/ca17.ard
+  source:
+  - name: '116'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca17-116.event
+  - name: '116v'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca17-116v.event
+- name: ard/us/ca24.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca24.ard
+  - name: ard/fr/ca24.ard
+  - name: ard/gr/ca24.ard
+  - name: ard/it/ca24.ard
+  - name: ard/sp/ca24.ard
+  - name: ard/uk/ca24.ard
+  source:
+  - name: '107'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca24-107.event
+  - name: '214'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca24-214.event
+- name: ard/us/ca25.ard
+  method: binarc
+  multi:
+  - name: ard/jp/ca25.ard
+  - name: ard/fr/ca25.ard
+  - name: ard/gr/ca25.ard
+  - name: ard/it/ca25.ard
+  - name: ard/sp/ca25.ard
+  - name: ard/uk/ca25.ard
+  source:
+  - name: '112'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/ca25-112.event
+- name: ard/us/dc01.ard
+  method: binarc
+  multi:
+  - name: ard/jp/dc01.ard
+  - name: ard/fr/dc01.ard
+  - name: ard/gr/dc01.ard
+  - name: ard/it/dc01.ard
+  - name: ard/sp/dc01.ard
+  - name: ard/uk/dc01.ard
+  source:
+  - name: '101'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/dc01-101.event
+  - name: '104'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/dc01-104.event
+- name: ard/us/dc03.ard
+  method: binarc
+  multi:
+  - name: ard/jp/dc03.ard
+  - name: ard/fr/dc03.ard
+  - name: ard/gr/dc03.ard
+  - name: ard/it/dc03.ard
+  - name: ard/sp/dc03.ard
+  - name: ard/uk/dc03.ard
+  source:
+  - name: '103'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/dc03-103.event
+- name: ard/us/dc04.ard
+  method: binarc
+  multi:
+  - name: ard/jp/dc04.ard
+  - name: ard/fr/dc04.ard
+  - name: ard/gr/dc04.ard
+  - name: ard/it/dc04.ard
+  - name: ard/sp/dc04.ard
+  - name: ard/uk/dc04.ard
+  source:
+  - name: '108'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/dc04-108.event
+  - name: '109'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/dc04-109.event
+- name: ard/us/dc05.ard
+  method: binarc
+  multi:
+  - name: ard/jp/dc05.ard
+  - name: ard/fr/dc05.ard
+  - name: ard/gr/dc05.ard
+  - name: ard/it/dc05.ard
+  - name: ard/sp/dc05.ard
+  - name: ard/uk/dc05.ard
+  source:
+  - name: '111'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/dc05-111.event
+  - name: '205'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/dc05-205.event
+- name: ard/us/dc06.ard
+  method: binarc
+  multi:
+  - name: ard/jp/dc06.ard
+  - name: ard/fr/dc06.ard
+  - name: ard/gr/dc06.ard
+  - name: ard/it/dc06.ard
+  - name: ard/sp/dc06.ard
+  - name: ard/uk/dc06.ard
+  source:
+  - name: '102'
+    method: copy
+    type: Event
+    source:
+    - name: cutscenes/dc06-102.event
